@@ -1,0 +1,15 @@
+#root {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+.project-controls{
+  padding: 2rem;
+}
+
+.project-controls{
+  width: 80vw;
+  justify-content: space-evenly;
+  display: flex;
+}

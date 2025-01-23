@@ -1,0 +1,79 @@
+/* General Section Styling */
+:root{
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #E5D9F2;
+
+  
+  
+}
+
+/* Headings inside Sections */
+section h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--heading-color, #fff);
+}
+
+/* Paragraph Styling */
+section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+  color: var(--paragraph-color, rgba(255, 255, 255, 0.87));
+}
+
+/* Button Enhancements */
+button {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--btn-bg, #646cff);
+  color: var(--btn-color, #fff);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+button:hover {
+  background-color: var(--btn-hover-bg, #1a1a1a);
+  color: var(--btn-hover-color, #fff);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  border-color: var(--btn-hover-border, #535bf2);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto var(--btn-focus-outline, #747bff);
+}
+
+/* Section Button */
+section button {
+  margin-top: 1rem;
+  background-color: var(--btn-alt-bg, #535bf2);
+  color: var(--btn-alt-color, #fff);
+  border-color: var(--btn-alt-border, #535bf2);
+}
+section button:hover {
+  background-color: var(--btn-alt-hover-bg, #646cff);
+  color: var(--btn-alt-hover-color, #fff);
+}
+
+/* Responsive Section Styling */
+@media (max-width: 768px) {
+  section {
+    padding: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  section p {
+    font-size: 0.95rem;
+  }
+}
