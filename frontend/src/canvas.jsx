@@ -57,7 +57,7 @@ const Canvas = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/canvas');
+      const response = await axios.get('https://emailbulider.onrender.com/api/canvas');
       setProjects(response.data);
     } catch (error) {
       console.error('Error fetching projects:', error);
@@ -74,7 +74,7 @@ const Canvas = () => {
         elements: [],
       };
 
-      const response = await axios.post('http://localhost:5000/api/canvas', newProject);
+      const response = await axios.post('https://emailbulider.onrender.com/api/canvas', newProject);
       setCurrentProject(response.data);
       fetchProjects();
     } catch (error) {
@@ -90,7 +90,7 @@ const Canvas = () => {
       const elements = JSON.stringify(editor.getComponents());
       const styles = editor.getCss();
   
-      await axios.put(`http://localhost:5000/api/canvas/${currentProject._id}`, {
+      await axios.put(`https://emailbulider.onrender.com/api/canvas/${currentProject._id}`, {
         elements,
         styles,
       });
@@ -105,7 +105,7 @@ const Canvas = () => {
     if (!editor) return;
   
     try {
-      const response = await axios.get(`http://localhost:5000/api/canvas/${project._id}`);
+      const response = await axios.get(`https://emailbulider.onrender.com/api/canvas/${project._id}`);
       const loadedProject = response.data;
   
       // Set both components and styles
